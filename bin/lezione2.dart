@@ -1,5 +1,6 @@
-import 'package:lezione2/lezione2.dart' as lezione2;
+import 'package:lezione2/quote_service.dart';
 
 void main(List<String> arguments) {
-  print('Hello world: ${lezione2.calculate()}!');
+  QuoteService quoteService = QuoteService();
+  quoteService.getQuote();
 }
